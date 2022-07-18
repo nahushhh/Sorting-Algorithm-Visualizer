@@ -58,7 +58,7 @@ def fill_window(draws, algo_name, ascending, speed, times):
     title = draws.TITLEFONT.render(f"{algo_name} - {'Ascending' if ascending else 'Descending'}", 1, draws.BLACK)
     draws.window.blit(title,(draws.width/2-title.get_width()/2, 17))
 
-    controls = draws.CONTROLFONT.render('R: RESET | H: HARD RESET| SPACE: START | A: ASCENDING | D: DESCENDING', 1, draws.BLACK)
+    controls = draws.CONTROLFONT.render('R: RESET |  SPACE: START | A: ASCENDING | D: DESCENDING', 1, draws.BLACK)
     draws.window.blit(controls,(draws.width/2-controls.get_width()/2, 45))
 
     other = draws.CONTROLFONT.render('UP ARROW: INCREASE SPEED | DOWN ARROW: DECREASE SPEED', 1, draws.BLACK)
